@@ -1,0 +1,102 @@
+#########################################
+# Question 1 - do not delete this comment
+#########################################
+def is_char_in_str(s1, c1):
+    return c1 in s1
+
+
+
+#########################################
+# Question 2 - do not delete this comment
+#########################################
+def is_in_range(lst2, a, b):
+    for item in lst2:
+        if not a<item<b:
+            return False
+    return True
+
+
+
+#########################################
+# Question 3 - do not delete this comment
+#########################################
+def upper_list_strings(lst3):
+    result = []
+    for s in lst3:
+        result.append(s.upper())
+    return result
+
+
+
+#########################################
+# Question 4 - do not delete this comment
+#########################################
+def log10_list(lst4):
+    import math
+    return [math.log(item, 10) for item in lst4]
+
+
+
+#########################################
+# Question 5 - do not delete this comment
+#########################################
+def is_palindrom(s5):
+    for i in range(len(s5)//2):
+        if s5[i] != s5[-i-1]:
+            return False
+    return True
+
+
+x = is_char_in_str('banana', 'a')
+print(x)
+print(type(x))
+x = is_char_in_str('banana', 'd')
+print(x)
+print(type(x))
+
+
+
+x = is_in_range ([1, 2, 3], 0, 5)
+print(x)
+print(type(x))
+
+
+
+x = is_in_range([4.7, -1, -2], -2, 0)
+print(x)
+print(type(x))
+
+
+
+my_list = upper_list_strings(['this', 'is', 'A', 'TeST', 'caSe', '!'])
+print(my_list)
+
+
+
+my_list = log10_list([10, 100, 1000, 10000])
+print(my_list)
+my_list =  log10_list([1, 2, 3, 4, 5])
+print(my_list)
+
+
+
+x = is_palindrom('banana')
+print(x)
+print(type(x))
+x = is_palindrom('Anana')
+print(x)
+print(type(x))
+x = is_palindrom('anana')
+print(x)
+print(type(x))
+
+
+
+
+
+
+
+
+
+
+
